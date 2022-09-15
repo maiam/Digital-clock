@@ -2,7 +2,7 @@
 
 Demo: https://maiam.github.io/Digital-clock/
 
-by maiam
+by @maiam
 
 
 * Idea from: https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners
