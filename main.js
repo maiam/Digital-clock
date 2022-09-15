@@ -20,4 +20,30 @@ function updateTime () {
     }, 1000);
 }
 
+function changeRegion() {
+
+    const textHours = document.getElementById('text-hours');
+    const textMinutes = document.getElementById('text-minutes');
+    const textSeconds = document.getElementById('text-seconds');
+
+    
+    
+        fetch('https://api.ipregistry.co/?key=tryout')
+        .then(function (response) {
+            return response.json();})
+        .then(function (payload) {
+            let country = payload.location.country.name;
+
+            if (country === 'Brazil') {
+
+                textHours.innerText = 'horas';
+                textMinutes.innerText = 'minutos';
+                textSeconds.innerText = 'segundos';
+              }
+        });
+}
+
 updateTime();
+changeRegion();
+
+  

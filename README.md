@@ -5,3 +5,6 @@ idea from https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beg
 Demo: 
 
 by maiam
+
+Obs.: 
+https://ipregistry.co/
