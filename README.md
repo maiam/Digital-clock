@@ -1,10 +1,10 @@
-#a digital clock
-idea from https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners
+# Digital-clock App
 
-
-Demo: 
+Demo: https://maiam.github.io/Digital-clock/
 
 by maiam
 
-Obs.: 
-https://ipregistry.co/
+
+* Idea from: https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners
+
+* Api from: https://ipregistry.co/
