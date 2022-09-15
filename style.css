@@ -1,0 +1,111 @@
+:root {
+
+    --font-family: sans-serif;
+
+    --clr-white: #fff;
+    --clr-black: #121212;
+    
+    --bg-primary: #90C2E7;
+    --bg-foreground: #4E8098;
+
+    --bg-dark: #192D39;
+    --bg-light: #FCF7F8;
+
+    --light-bold: 400;
+    --dark-bold: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    color-scheme: light dark;
+
+    font-size: 16px;
+    font-family: var(--font-family);
+    text-align: center;
+
+    background-color: var(--bg-dark);
+
+    background-image: url('https://images.unsplash.com/photo-1552082919-e60010758c47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.clock {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.clock div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.clock span{
+    padding: 0.5rem;
+    font-size: 4rem;
+    color: var(--clr-white);
+
+    background-color: var(--bg-primary);
+    opacity: 0.8;
+
+}
+
+.clock .text {
+    font-size: 1rem;
+    font-weight: var(--light-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.1;
+    text-align: center;
+
+    background-color: var(--bg-foreground);
+}
+
+.clock #ampm {
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;
+    background-color: var(--bg-foreground);
+}
+
+@media (prefers-color-scheme: light){
+    body {
+        background-color: var(--bg-light);
+        background-image: url('https://images.unsplash.com/photo-1627603129949-d1ef18c911ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+    }
+    h1 {
+        color: var(--clr-black);
+    }
+
+    .clock span {
+        color: var(--clr-black);
+
+        background-color: var(--bg-primary);
+    }
+}
+
+@media (max-width: 380px){
+    body {
+        scale: 90%;
+    }
+}
